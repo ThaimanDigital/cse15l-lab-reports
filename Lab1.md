@@ -49,7 +49,7 @@ For example, `ls -x` lists the directory contents by line instead of by column.
 ![](images/DirectoryLines.png)
 
 Another command, `ls -t` sorts the directory contests by the most recent element.
-![](images/DirectoryTime.png)
+![](images/DirectoryTimes.png)
 
 
 Have fun exploring the commands in the terminal! When you are finished type `exit` to disconnect from the computer.
