@@ -34,7 +34,7 @@ Here is the some of the manual for the list command found by entering `man ls`
 ![](images/ListManual.png)
 As you can see, the manual can be very useful in learning more about what a command does.
 
-The `pwd` commant prints the name of the current directory. Then use the `ls` command to list all the contents in the current directory.
+Another command, `pwd` , prints the name of the current directory. You can also use the `ls` command to list all the contents in the current directory.
 ![](images/FirstDirectory.png)
 
 In this case there were two files in my current working directory: per15 & wavelet.
