@@ -43,7 +43,14 @@ Then use the `cd` command followed a file name to change the working directory t
 
 ![](images/SecondDirectory.png)
 
-Here you can see all the files within wavelet, which is now the new working directory
+Here you can see all the files within wavelet, which is now the new working directory. Now we can try some of the `ls` commands that are outlined in the manual.
+
+For example, `ls -x` lists the directory contents by line instead of by column.
+![](images/DirectoryLines.png)
+
+Another command, `ls -t` sorts the directory contests by the most recent element.
+![](images/DirectoryTime.png)
+
 
 Have fun exploring the commands in the terminal! When you are finished type `exit` to disconnect from the computer.
 
