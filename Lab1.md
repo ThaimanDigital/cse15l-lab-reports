@@ -38,7 +38,8 @@ The `pwd` commant prints the name of the current directory. Then use the `ls` co
 ![](images/FirstDirectory.png)
 
 In this case there were two files in my current working directory: per15 & wavelet.
-Then use the `cd` command followed by the file you wish to jump to to change the working directory to the new file.
+
+Then use the `cd` command followed a file name to change the working directory to that  file. For example, from this working directory the command `cd wavelet` will change the working directory to be inside the wavelet folder.
 
 ![](images/SecondDirectory.png)
 
