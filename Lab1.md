@@ -34,6 +34,16 @@ Here is the some of the manual for the list command found by entering `man ls`
 ![](images/ListManual.png)
 As you can see, the manual can be very useful in learning more about what a command does.
 
+The `pwd` commant prints the name of the current directory. Then use the `ls` command to list all the contents in the current directory.
+![](images/FirstDirectory.png)
+
+In this case there were two files in my current working directory: per15 & wavelet.
+Then use the `cd` command followed by the file you wish to jump to to change the working directory to the new file.
+
+![](images/SecondDirectory.png)
+
+Here you can see all the files within wavelet, which is now the new working directory
+
 Have fun exploring the commands in the terminal! When you are finished type `exit` to disconnect from the computer.
 
 
