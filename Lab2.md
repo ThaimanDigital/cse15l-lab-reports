@@ -75,6 +75,8 @@ public void testReverseInPlace() {
     assertArrayEquals(input2, new int[]{1,2,3});
 }
   ```
+![](images/TestFail.png)
+
 Even thought the program has a bug, not all inputs result in symptoms. For example, symmetrical or black arrays do not result in failures. The input
 {0, 0, 0} does not result in an error even thought the program contains a bug.
 ```
