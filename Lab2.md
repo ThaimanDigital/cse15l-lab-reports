@@ -98,14 +98,15 @@ front half. Here is the new method with the bug fixed:
 ```
 static void reverseInPlace(int[] arr) {
     int front, back;
-    for (int i = 0; i < arr.length - 1; i++) {
-      back = arr[arr.length - i - 1];
+    for (int i = 0; i < arr.length / 2; i++) {
       front = arr[i];
-      arr[i] = front;
-      arr[arr.length - i - 1] = back;
+      back = arr[arr.length - 1 -i];
+      arr[i] = back;
+      arr[arr.length - 1 - i] = front;
     }
-}
+  }
 ```
+![](images/TestPass.png)
 
 # Part 3 - What I Learned
 
