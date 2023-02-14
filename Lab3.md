@@ -49,12 +49,31 @@ The `-depth n` primary allows you to evaluate files that are a given depth n fro
 
 ![](images/depth1.png)
 
-In this example we used the `-depth 4` primary to evaluate our paths against a depth or distance of 4 from our given directory which was `written-2`. 
-Although all the outputs aren't included in the image, a depth of 4 excludes all the travel guides fromour search because they only have a depth of 3.
+In this example we used the `-depth 4` primary to evaluate our paths against a depth or distance of 4 from the given directory. 
+Although all the outputs aren't included in the image, a depth of 4 excludes all the travel guides from our search because they only have a depth of 3.
 
 ### Example: Finding paths with a depth of 5
 
-![](iamges/depth2.png)
+![](images/depth2.png)
 
 In th same `written-2` directoy we can use  `-depth 5` to look for files that have a depth of 5. As we can see, there are no files within the directory 
 that have a depth of 5.
+
+## 4: The -newer primary
+
+Oftentimes it might be useful to look for the newest files in a directory. The `-newer <file>` primary allows us to the age of files against the given
+file, and returns them if they are newer than the given file.
+
+### Example: Finding files newer than "HistoryItaly.txt"
+
+![](images/newer1.png)
+
+Here I have searched for files within the directory that are newer than `HistoryItaly.txt`. Noticably, all of the nonfiction files seem to have been 
+made prior to the file in question.
+
+### Example: Finding files newere than "HistoryItaly.txt" and containing "History" in their name
+
+![](images.newer2.png)
+
+A cool thing about the `find` command are the logical operators you can add onto your expressions. In this example I used the `-and` logical expression
+in combination with the last example to search for files newer than `HistoryItaly.txt` that also contain `*History*` in their name.
