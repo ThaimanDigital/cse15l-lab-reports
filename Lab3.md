@@ -73,7 +73,7 @@ made prior to the file in question.
 
 ### Example: Finding files newere than "HistoryItaly.txt" and containing "History" in their name
 
-![](images.newer2.png)
+![](images/newer2.png)
 
 A cool thing about the `find` command are the logical operators you can add onto your expressions. In this example I used the `-and` logical expression
 in combination with the last example to search for files newer than `HistoryItaly.txt` that also contain `*History*` in their name.
