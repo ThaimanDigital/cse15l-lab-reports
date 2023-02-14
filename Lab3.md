@@ -3,7 +3,7 @@
 The `find` utility is a useful terminal command for finding files that fit a certain description within a directory. It operates by evaluating every 
 path in a given directory against an expression and printing the results. There are many additional options to be used with `find` that can be 
 very useful. The format of using the command is `find [path...] [expresssion]`
-Here are four examples of using `find` in different ways on the [/written=-2](https://github.com/ucsd-cse15l-w23/skill-demo1-data.git) directory. I found
+Here are four examples of using `find` in different ways on the [/written-2](https://github.com/ucsd-cse15l-w23/skill-demo1-data.git) directory. I found
 all of these examples using the `man find` command and looking through the documentation.
 
 
