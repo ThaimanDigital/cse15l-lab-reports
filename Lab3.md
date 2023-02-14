@@ -40,3 +40,21 @@ directory in an ordered fashion.
 ![](images/s2.png)
 
 Similarly, we can sort the non-fiction paths within written-2 using`-s`.
+
+## 3: The -depth n primary
+
+The `-depth n` primary allows you to evaluate files that are a given depth n from the given directory.
+
+### Example: Finding paths with a depth of 4
+
+![](images/depth1.png)
+
+In this example we used the `-depth 4` primary to evaluate our paths against a depth or distance of 4 from our given directory which was `written-2`. 
+Although all the outputs aren't included in the image, a depth of 4 excludes all the travel guides fromour search because they only have a depth of 3.
+
+### Example: Finding paths with a depth of 5
+
+![](iamges/depth2.png)
+
+In th same `written-2` directoy we can use  `-depth 5` to look for files that have a depth of 5. As we can see, there are no files within the directory 
+that have a depth of 5.
