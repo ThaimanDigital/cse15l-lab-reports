@@ -44,7 +44,7 @@ Keys pressed: `javac L, <tab>, .java, <enter>, <up>, <up>, <enter>`
 
 ## Ste 6: Commit and push the resulting change to your Github account
 
-The final step is to add, commit, and push the changes to my repository. First I use the command `$ git add ListExamples.java` to add the corrected file to my commit. Then, I commit my changes using `$ git commmit -m "fixed"`, and push my commit with `$ git push`.
+The final step is to add, commit, and push the changes to my repository. First I use the command `$ git add ListExamples.java` to add the corrected file to my commit. Then, I commit my changes using `$ git commit -m "fixed"`, and push my commit with `$ git push`.
 
 Keys pressed: `git add L, <tab>, .java, <enter>, git commit -m "fixed", <enter>, git push, <enter>`
 
