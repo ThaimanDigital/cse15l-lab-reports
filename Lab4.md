@@ -4,9 +4,9 @@ The following tasks were run using the [lab 7](https://github.com/ThaimanDigital
 
 ## Step 1: Log into ieng6
 
-The first step is to log into my course-specific ieng6 account, which i did by typing `$ cs15lwi23akp@ieng6.ucsd.edu` into my terminal. Note that I had already generated SSH keys to log into my ieng6 account automatically. 
+The first step is to log into my course-specific ieng6 account, which i did by typing `$ ssh cs15lwi23akp@ieng6.ucsd.edu` into my terminal. Note that I had already generated SSH keys to log into my ieng6 account automatically. 
 
-Keys pressed: `cs15lwi23akp@ieng6.ucsd.edu, <enter>`
+Keys pressed: `ssh cs15lwi23akp@ieng6.ucsd.edu, <enter>`
 
 ![](/images/Step1.png)
 
