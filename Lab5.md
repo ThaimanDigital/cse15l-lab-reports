@@ -62,4 +62,23 @@ Again, the bash code for this section is almost identical to my manual inputs fr
 
 This was the most involved part of making this bash script because the strategy I employed to edit the file was completely different than how I would have manually edited the file. In lab7 I used the `nano` command to open the ListExamples.java file and then make the correct changed to the file to pass the tests. However, I soon realized that writing a bash script to navigate through a file in `nano` and make and save changes would be difficult if not impossible. So I looked up other methods of editing a file from the terminal to see if there was a more efficient way of doing it. 
 
-After a quick search I came across the `sed` command, which stands for Stream Editor, which allows us to make edits to files from the command line. After some trial and error the final line of code that I used was: `sed -i '43 s/index1/index2/' ListExamples.java` which I will explain shortly. The `-i` extention ensures that `sed` edits files in place, meaning that the command will overwrite the existing file with the changes made. Next, I learned that `sed` has lots of adresses that allows users to edit/replace/delete lines of text from a file. The `s/` address that I use in the script allows users to replace text in the following format: `s/regular expression/replacement/flags`. Because I was trying the replace `index1` with `index2` on line 43 of ListExamples.java, the regular expression I used was `index1` and the replacement was `index2`. Flags allow users to make mores
+After a quick search I came across the `sed` command, which stands for Stream Editor, which allows us to make edits to files from the command line. After some trial and error the final line of code that I used was: `sed -i '43 s/index1/index2/' ListExamples.java` which I will explain shortly. 
+- The `-i` extention ensures that `sed` edits files in place, meaning that the command will overwrite the existing file with the changes made. 
+- Next, I learned that `sed` has lots of functions that allows users to edit/replace/delete lines of text from a file. The 's/' function allows users to replace text in the following format: `s/regular expression/replacement/flags`. 
+    - Because I was trying the replace 'index1' with 'index2' on line 43 of ListExamples.java, the regular expression I used was 'index1' and the replacement was 'index2'. 
+    - Flags allow users to make more specific changes such as only replacing the first instance, skipping instances, etc. But becuase I only had to replace 1 expression, which was also the only expression on that line, I didn't need to use any flags.
+- The address '43' tells `sed` to only make edits on line 43 of the file. Otherwise the command would replace every instance of index1 with index2 across the file.
+- Finally, the 'ListExamples.java' following the address tells sed to make changes on ListExamples.java.
+
+### Step 5: Demonstrating that the JUnit Tests Pass
+
+After editing the file, demonstrating that the JUnit tests now pass is fairly simple. I used the same commands I used previously to compile 'ListExamples.java' and run the JUnit tests. I also added `echo Demonstrate Tests Pass` to the script to show that the tasks were completed correctly. Here is a screenshot of the script working:
+
+![](/images/Lab5-5.png)
+
+### Step 6: Add, Commit, and Push to Github
+
+This final part of the script is also fairly straighforward because it uses the same commands I used in lab7 CLDQ. I used the `git add ListExamples.java` command to add the ListExamples.java file to my commit. Then I used `git commit -m 'Fixed'` to commit the files with the message 'Fixed'. Finally, I pushed the commands to my repository with `git push`. I also added `echo 'Tasks Completed'` to demonstrate that I had Completed the tasks. Notice that after the final command is executed the script automatically logs out of ieng6 because the parenthesis are closed. Here are screenshots of the script working:
+
+![](/images/Lab5-61.png)
+![](/images/Lab6-62.png)
